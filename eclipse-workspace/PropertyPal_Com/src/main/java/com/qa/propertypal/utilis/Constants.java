@@ -14,4 +14,6 @@ public class Constants {
 	
 	public static final String SO14_RESULT = "SORRY, NO PROPERTIES FOUND";
 	
+	public static final String BT6_PRINT = "The total number of properties for BT6 is : ";
+	
 }

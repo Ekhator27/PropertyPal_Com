@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.propertypal.test.SearchBT6PageTest">
+      <class name="com.qa.propertypal.test.UsersSearchSO14PageTest">
         <methods>
-          <include name="SearchBT6"/>
+          <include name="UsersSearchSO14PageTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.propertypal.test.SearchBT6PageTest -->
+      </class> <!-- com.qa.propertypal.test.UsersSearchSO14PageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

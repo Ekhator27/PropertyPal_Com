@@ -18,6 +18,7 @@ import com.qa.propertypal.utilis.ElementUtilis;
 
 public class SearchBT6Page {
 	
+	private static final String nextButton = null;
 	private ElementUtilis elementUtilis;
 	WebElement ele;
 	// Search using "BT6" in the search bar and assert that results are accurate for that location.
@@ -40,34 +41,34 @@ public class SearchBT6Page {
 
 		// page actions:
 		public String SearchMyLocationPageTitle() {
-			return elementUtilis.waitForTitleToBe(Constants.SO14_SEARCH_MY_LOCATION_PAGE, 30);
+			return elementUtilis.waitForTitleToBe(Constants.BT6_SEARCH_MY_LOCATION_PAGE, 30);
 		}
 		
-//		public void LoopAndCountProperties()
-//		{
-//		
-//		}
-//	
-//		public void doSearchBT6(String location)
-//		{
-//			 WebDriverWait wait2 = new WebDriverWait(driver, 30);
-//			    wait2.until(ExpectedConditions.elementToBeClickable(PopLink));
-//			    
-//			    driver.findElement(PopLink).click();
-//			    
-//				WebDriverWait wait = new WebDriverWait(driver, 30);
-//				wait.until(ExpectedConditions.visibilityOfElementLocated(Searchbar));
-//				
-//				driver.findElement(Searchbar).click();
-//				
-//				driver.findElement(Searchbar).sendKeys(location);
-//				driver.findElement(Searchbar).sendKeys(Keys.ENTER);
-//				
-//				WebDriverWait wait1 = new WebDriverWait(driver, 30);
-//				wait1.until(ExpectedConditions.visibilityOfElementLocated(PropertyList));
-//					
-//				
-//		}
-//	
-//
-}
+		public void clickPopUpWindowWhenReady() {
+			elementUtilis.clickWhenReady(PopLink, 30);
+		}
+		
+		public void doClickSearchBox() {
+			elementUtilis.doSendKeys(Searchbar, "BT6");
+		}
+		
+		public void doClickLocation() {
+			elementUtilis.doActionsSendKeys(Searchbar, Keys.ENTER);
+		}
+		
+		public void waitForElementVisible() {
+			elementUtilis.waitForElementVisible(PropertyList, 50);
+		
+	}
+		
+		public void doLoopAndCount() {
+		String propertiesList = null;
+		String Next;
+		String text = null;
+		elementUtilis.doLoopAndCount(propertiesList, nextButton, text);
+		}
+
+		
+			
+		}
+

@@ -1,8 +1,10 @@
 package com.qa.propertypal.test;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.propertypal.base.BaseTest;
 import com.qa.propertypal.pages.UsersSearchSO14Page;
+import com.qa.propertypal.utilis.Constants;
 
 public class UsersSearchSO14PageTest extends BaseTest {
 	
@@ -13,9 +15,9 @@ public class UsersSearchSO14PageTest extends BaseTest {
 		obj.clickPopUpWindowWhenReady();
 		obj.doClickSearchBox();
 		obj.doClickLocation();
-	
-//		String title = UsersSearchSO14Page.
-//		System.out.println("print correct page title is : " + title);
+		String title = SearchMyLocationPage.SearchMyLocationPageTitle();
+		System.out.println("print correct page title is : " + title);
+		Assert.assertEquals(Constants.SEARCH_MY_LOCATION_PAGE, 30);
 		
 		
 

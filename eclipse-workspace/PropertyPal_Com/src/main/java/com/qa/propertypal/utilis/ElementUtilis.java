@@ -82,8 +82,6 @@ public class ElementUtilis {
             int propertiesCount = properties.size();
             count = count+propertiesCount;
             driver.findElement(By.cssSelector(nextButton)).click();
-           // nextButton.click();
-           // page.get(i).click();
         }
 
         System.out.println(text+count);
