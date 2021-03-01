@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test automtion regression suite" parallel="tests"
+	thread-count="3" verbose="3">
+
+	<test name="SearchMyLocation Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="TestNgSessions.SearchMyLocationPageTest"/>
+			<class name="TestNgSessions.UsersSearchSO14PageTest" />
+			<class name="TestNgSessions.SearchBT6PageTest" />
+		</classes>
+	</test>
+
+	<test name="UsersSearchSO14 Test">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="TestNgSessions.UsersSearchSO14PageTest" />
+			<class name="TestNgSessions.UsersSearchSO14PageTest" />
+			<class name="TestNgSessions.SearchBT6PageTest" />
+		</classes>
+	</test>
+
+
+
+
+</suite>
