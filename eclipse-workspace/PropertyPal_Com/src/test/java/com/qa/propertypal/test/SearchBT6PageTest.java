@@ -20,7 +20,9 @@ public class SearchBT6PageTest extends BaseTest{
 		String title = SearchMyLocationPage.SearchMyLocationPageTitle();
 		System.out.println("print correct page title is : " + title);
 		Assert.assertEquals(Constants.BT6_SEARCH_MY_LOCATION_PAGE, 30);
-			
+		obj.doLoopAndCount();
+		
+		//The number of properties stated on the website differs from the automation result.
 	}
 
 	

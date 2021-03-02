@@ -18,9 +18,7 @@ public class UsersSearchSO14PageTest extends BaseTest {
 		String title = SearchMyLocationPage.SearchMyLocationPageTitle();
 		System.out.println("print correct page title is : " + title);
 		Assert.assertEquals(Constants.SEARCH_MY_LOCATION_PAGE, 30);
-		
-		
 
 	}
-	
+
 }

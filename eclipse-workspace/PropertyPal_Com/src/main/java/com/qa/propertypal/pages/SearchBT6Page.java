@@ -31,7 +31,7 @@ public class SearchBT6Page {
 		private By SearchButton = By.cssSelector("[class='search-btns ']");
 		private By PopLink = By.cssSelector("button[type='button']:nth-child(2)");
 		private By PropertyList = By.cssSelector("div[class='sr-widecol']>ul>li[data-space]");
-		private By Next = By.cssSelector("ul[class='paging']>li");
+		private By Next = By.cssSelector("a[class='btn paging-next']");
 
 		// page constructor:
 		public SearchBT6Page(WebDriver driver) {
@@ -62,10 +62,28 @@ public class SearchBT6Page {
 	}
 		
 		public void doLoopAndCount() {
-		String propertiesList = null;
-		String Next;
-		String text = null;
-		elementUtilis.doLoopAndCount(propertiesList, nextButton, text);
+			/************************************************************
+			 * 
+			 * DESCRIPTION
+			 * 
+			 * This method loops through pages and counts 
+			 * the properties in each to give a total result
+			 * 
+			 ***********************************************************/
+			
+			int count = 0;
+
+	        for(int i=0; i<6; i++)
+	        {
+	            WebDriverWait wait3 = new WebDriverWait(driver, 20);
+	            wait3.until(ExpectedConditions.visibilityOfElementLocated(PropertyList));
+	            List<WebElement> properties = driver.findElements(PropertyList);
+	            int propertiesCount = properties.size();
+	            count = count+propertiesCount;
+	            driver.findElement(By.cssSelector(nextButton)).click();
+	        }
+
+	        System.out.println(Constants.BT6_PRINT+count);
 		}
 
 		

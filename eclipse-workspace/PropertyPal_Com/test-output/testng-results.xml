@@ -2,37 +2,50 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-01T23:11:09Z" name="Default suite" finished-at="2021-03-01T23:12:38Z" duration-ms="89111">
+  <suite started-at="2021-03-02T20:24:20Z" name="Default suite" finished-at="2021-03-02T20:33:22Z" duration-ms="542303">
     <groups>
     </groups>
-    <test started-at="2021-03-01T23:11:09Z" name="Default test" finished-at="2021-03-01T23:12:38Z" duration-ms="89111">
-      <class name="com.qa.propertypal.test.UsersSearchSO14PageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.propertypal.test.UsersSearchSO14PageTest@f78a47e]" started-at="2021-03-01T23:11:09Z" name="setUp" finished-at="2021-03-01T23:12:02Z" duration-ms="52785" status="PASS">
+    <test started-at="2021-03-02T20:24:20Z" name="Default test" finished-at="2021-03-02T20:33:22Z" duration-ms="542303">
+      <class name="com.qa.propertypal.test.SearchBT6PageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.propertypal.test.SearchBT6PageTest@f78a47e]" started-at="2021-03-02T20:24:20Z" name="setUp" finished-at="2021-03-02T20:27:50Z" duration-ms="210314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="UsersSearchSO14PageTest()[pri:0, instance:com.qa.propertypal.test.UsersSearchSO14PageTest@f78a47e]" started-at="2021-03-01T23:12:02Z" name="UsersSearchSO14PageTest" finished-at="2021-03-01T23:12:38Z" duration-ms="36106" status="FAIL">
+        <test-method signature="SearchBT6PageTest()[pri:0, instance:com.qa.propertypal.test.SearchBT6PageTest@f78a47e]" started-at="2021-03-02T20:27:51Z" name="SearchBT6PageTest" finished-at="2021-03-02T20:33:22Z" duration-ms="330724" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for title to contain "My Location - PropertyPal". Current title: "Property For Sale in SO14 - PropertyPal" (tried for 30 second(s) with 500 milliseconds interval)
+              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=88.0.4324.190)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-RAKK9KJ', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: host: 'DESKTOP-RAKK9KJ', ip: '192.168.145.237', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\DY\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 122e53e83d32507462b9cbb27a719423]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\DY\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31cc333631f8c40804d5f2f4c53108de]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "My Location - PropertyPal". Current title: "Property For Sale in SO14 - PropertyPal" (tried for 30 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=88.0.4324.190)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-RAKK9KJ', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: host: 'DESKTOP-RAKK9KJ', ip: '192.168.145.237', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\DY\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 122e53e83d32507462b9cbb27a719423
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.qa.propertypal.utilis.ElementUtilis.waitForTitleToBe(ElementUtilis.java:69)
-at com.qa.propertypal.pages.SearchMyLocationPage.SearchMyLocationPageTitle(SearchMyLocationPage.java:32)
-at com.qa.propertypal.test.UsersSearchSO14PageTest.UsersSearchSO14PageTest(UsersSearchSO14PageTest.java:18)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\DY\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31cc333631f8c40804d5f2f4c53108de
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at com.qa.propertypal.utilis.ElementUtilis.doActionsSendKeys(ElementUtilis.java:33)
+at com.qa.propertypal.pages.SearchBT6Page.doClickLocation(SearchBT6Page.java:56)
+at com.qa.propertypal.test.SearchBT6PageTest.SearchBT6PageTest(SearchBT6PageTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,8 +76,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UsersSearchSO14PageTest -->
-      </class> <!-- com.qa.propertypal.test.UsersSearchSO14PageTest -->
+        </test-method> <!-- SearchBT6PageTest -->
+      </class> <!-- com.qa.propertypal.test.SearchBT6PageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
