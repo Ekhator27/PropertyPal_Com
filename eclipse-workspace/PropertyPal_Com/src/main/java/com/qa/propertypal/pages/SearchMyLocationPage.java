@@ -12,8 +12,6 @@ public class SearchMyLocationPage {
 	private ElementUtilis elementUtilis;
 	WebElement ele;
 
-	//private WebDriver driver;
-
 	// Search using "My Location" and assert that results are accurate to users
 	// current location.
 
